@@ -1,14 +1,14 @@
 console.log("Hello TypeScript!");
 
-let a = 1 + 2;
-let b = a + 3;
-let c = {
+const a = 1 + 2;
+const b = a + 3;
+const c = {
   apple: a,
   banana: b,
 };
-let d = c.apple * 4;
+const d = c.apple * 4;
 
-let e = d + c.banana;
+const e = d + c.banana;
 
 type B = {
   foo: number;
@@ -22,6 +22,6 @@ type A = {
 };
 
 let eins = { foo: 1, bar: 2 };
-let two: B = { foo: 3, bar: 4, zeh: 5 };
+const two: B = { foo: 3, bar: 4, zeh: 5 };
 
 eins = two; // <== it works!!!

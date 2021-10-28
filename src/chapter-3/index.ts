@@ -1,14 +1,13 @@
 // Exercises
 
 const chapter3 = () => {
-
-    // 1. For each of these values, what type will TypeScript infer?
-    let a = 1042                    // number
-    let b = 'apples and oranges'    // string
-    const c = 'pineapples'          // 'pineapples'
-    let d = [true, true, false]     // boolean[]
-    let e = {type: 'ficus'}         // {type: string}
-    let f = [1, false]              // (number | boolean)[]
-    const g = [3]                   // number[]
-    let h = null                    // null --> any
-}
+  // 1. For each of these values, what type will TypeScript infer?
+  const a = 1042; // number
+  const b = "apples and oranges"; // string
+  const c = "pineapples"; // 'pineapples'
+  const d = [true, true, false]; // boolean[]
+  const e = { type: "ficus" }; // {type: string}
+  const f = [1, false]; // (number | boolean)[]
+  const g = [3]; // number[]
+  const h = null; // null --> any
+};
